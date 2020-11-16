@@ -4,4 +4,134 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+html {
+  font-family: sans-serif;
+  font-size: 62.25%;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+i,
+svg {
+  pointer-events: none;
+}
+
+.kick-pad,
+.snare-pad,
+.hihat-pad {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+}
+
+.kick-pad {
+  background: #76e676;
+}
+
+.kick-pad.active {
+  background: #03b603;
+}
+
+.snare-pad {
+  background: #7979f5;
+}
+
+.snare-pad.active {
+  background: #4343ca;
+}
+
+.hihat-pad {
+  background: #ff7a7a;
+}
+
+.hihat-pad.active {
+  background: #dd2828;
+}
+
+#kick-track,
+#snare-track,
+#hihat-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 80%;
+  margin-top: 5rem;
+}
+
+.kick,
+.snare,
+.hihat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0 2rem;
+}
+
+.controls > button {
+  padding: 1rem;
+  border: none;
+  background: #575555;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.pad {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#play {
+  padding: 1rem 2rem;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  background: #575555;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+select {
+  padding: 1rem;
+  font-size: 1rem;
+}
 /*# sourceMappingURL=style.css.map */
