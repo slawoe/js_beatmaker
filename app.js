@@ -8,6 +8,7 @@ class DrumKit {
   }
   repeat() {
     let step = this.index % 8;
+    this.index++;
   }
   start() {
     setInterval(() => {
@@ -15,3 +16,6 @@ class DrumKit {
     }, 1000);
   }
 }
+
+const drumKit = new DrumKit();
+drumKit.start();
