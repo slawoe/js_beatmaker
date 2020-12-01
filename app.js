@@ -6,4 +6,12 @@ class DrumKit {
     this.hihatAudio = document.querySelector(".hihat-sound");
     this.index = 0;
   }
+  repeat() {
+    let step = this.index % 8;
+  }
+  start() {
+    setInterval(() => {
+      this.repeat();
+    }, 1000);
+  }
 }
