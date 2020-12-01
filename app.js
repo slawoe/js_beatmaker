@@ -5,6 +5,7 @@ class DrumKit {
     this.snareAudio = document.querySelector(".snare-sound");
     this.hihatAudio = document.querySelector(".hihat-sound");
     this.index = 0;
+    this.bpm = 150;
   }
   repeat() {
     let step = this.index % 8;
@@ -12,9 +13,10 @@ class DrumKit {
     this.index++;
   }
   start() {
+    const interval = (60 / this.bpm) * 1000;
     setInterval(() => {
       this.repeat();
-    }, 1000);
+    }, interval);
   }
 }
 
