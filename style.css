@@ -25,6 +25,8 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: #4a4aa1;
+  color: white;
 }
 
 i,
@@ -42,27 +44,27 @@ svg {
 }
 
 .kick-pad {
-  background: #76e676;
+  background: #99e799;
 }
 
 .kick-pad.active {
-  background: #03b603;
+  background: #4a9b4a;
 }
 
 .snare-pad {
-  background: #7979f5;
+  background: #e3f399;
 }
 
 .snare-pad.active {
-  background: #4343ca;
+  background: #acc231;
 }
 
 .hihat-pad {
-  background: #ff7a7a;
+  background: #ffb3b3;
 }
 
 .hihat-pad.active {
-  background: #dd2828;
+  background: #da6262;
 }
 
 #kick-track,
@@ -107,7 +109,7 @@ svg {
 .controls > button {
   padding: 1rem;
   border: none;
-  background: #575555;
+  background: #817e7e;
   color: white;
   font-size: 1rem;
   cursor: pointer;
@@ -124,7 +126,7 @@ svg {
   padding: 1rem 2rem;
   margin-top: 3rem;
   font-size: 1.5rem;
-  background: #575555;
+  background: #817e7e;
   color: white;
   border: none;
   cursor: pointer;
