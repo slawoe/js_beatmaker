@@ -51,7 +51,7 @@ svg {
 #hihat-track {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 80%;
   margin-top: 5rem;
 }
@@ -75,9 +75,11 @@ svg {
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.5s ease;
+  border-radius: 1rem;
 }
 .pad {
   transition: all 0.5s ease;
+  border-radius: 1rem;
 }
 #play {
   padding: 1rem 2rem;
@@ -86,11 +88,14 @@ svg {
   background: rgb(129, 126, 126);
   color: white;
   border: none;
+  border-radius: 1rem;
   cursor: pointer;
 }
 select {
   padding: 1rem;
   font-size: 1rem;
+  border: none;
+  border-radius: 1rem;
 }
 
 @keyframes playTrack {

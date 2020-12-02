@@ -76,8 +76,9 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   width: 80%;
   margin-top: 5rem;
 }
@@ -115,11 +116,13 @@ svg {
   cursor: pointer;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  border-radius: 1rem;
 }
 
 .pad {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  border-radius: 1rem;
 }
 
 #play {
@@ -129,12 +132,15 @@ svg {
   background: #817e7e;
   color: white;
   border: none;
+  border-radius: 1rem;
   cursor: pointer;
 }
 
 select {
   padding: 1rem;
   font-size: 1rem;
+  border: none;
+  border-radius: 1rem;
 }
 
 @-webkit-keyframes playTrack {
