@@ -37,12 +37,16 @@ class DrumKit {
   start() {
     const interval = (60 / this.bpm) * 1000;
     if (!this.isPlaying) {
+      this.playBtn.innerText = "Pause";
+      this.playBtn.classList.add("active");
       this.isPlaying = setInterval(() => {
         this.repeat();
       }, interval);
     } else {
       clearInterval(this.isPlaying);
       this.isPlaying = null;
+      this.playBtn.innerText = "Play";
+      this.playBtn.classList.remove("active");
     }
   }
 }
