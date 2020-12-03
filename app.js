@@ -40,6 +40,9 @@ class DrumKit {
       this.isPlaying = setInterval(() => {
         this.repeat();
       }, interval);
+    } else {
+      clearInterval(this.isPlaying);
+      this.isPlaying = null;
     }
   }
 }
