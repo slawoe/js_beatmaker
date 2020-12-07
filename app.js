@@ -12,7 +12,7 @@ class DrumKit {
     this.bpm = 150;
     this.isPlaying = null;
     this.select = document.querySelectorAll("select");
-    this.muteButtons = document.querySelector(".mute");
+    this.muteButtons = document.querySelectorAll(".mute");
   }
   activePad() {
     this.classList.toggle("active");
@@ -85,4 +85,9 @@ drumKit.select.forEach((select) => {
   select.addEventListener("change", function (e) {
     drumKit.changeSound(e);
   });
+});
+drumKit.muteButtons.forEach((btn) => {
+  btn.addEventListener("click", function(e){
+drumKit.mute(e)
+  }
 });
