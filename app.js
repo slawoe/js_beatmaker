@@ -69,7 +69,10 @@ class DrumKit {
         break;
     }
   }
-  mute(e) {}
+  mute(e) {
+    const muteIndex = e.target.getAttribute("data-track");
+    e.target.classList.toggle("active");
+  }
 }
 
 const drumKit = new DrumKit();
