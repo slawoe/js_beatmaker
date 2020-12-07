@@ -11,7 +11,7 @@ class DrumKit {
     this.index = 0;
     this.bpm = 150;
     this.isPlaying = null;
-    this.select.document.querySelector("select");
+    this.select.document.querySelectorAll("select");
   }
   activePad() {
     this.classList.toggle("active");
@@ -53,6 +53,9 @@ class DrumKit {
       this.playBtn.classList.remove("active");
     }
   }
+  changeSound(e) {
+    console.log(e);
+  }
 }
 
 const drumKit = new DrumKit();
@@ -66,7 +69,7 @@ drumKit.playBtn.addEventListener("click", function () {
   drumKit.start();
 });
 drumKit.selects.forEach((select) => {
-  select.addEventListener("change", () => {
-    drumKit.changeSound();
+  select.addEventListener("change", (e) => {
+    drumKit.changeSound(e);
   });
 });
