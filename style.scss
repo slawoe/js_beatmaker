@@ -97,6 +97,9 @@ select {
   border: none;
   border-radius: 1rem;
 }
+.mute.active {
+  background-color: red;
+}
 
 @keyframes playTrack {
   from {

@@ -143,6 +143,10 @@ select {
   border-radius: 1rem;
 }
 
+.mute.active {
+  background-color: red;
+}
+
 @-webkit-keyframes playTrack {
   from {
     -webkit-transform: scale(1);
