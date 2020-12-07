@@ -12,6 +12,7 @@ class DrumKit {
     this.bpm = 150;
     this.isPlaying = null;
     this.select = document.querySelectorAll("select");
+    this.muteButtons = document.querySelector(".mute");
   }
   activePad() {
     this.classList.toggle("active");
