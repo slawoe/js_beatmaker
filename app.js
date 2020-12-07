@@ -69,6 +69,7 @@ class DrumKit {
         break;
     }
   }
+  mute(e) {}
 }
 
 const drumKit = new DrumKit();
@@ -87,7 +88,7 @@ drumKit.select.forEach((select) => {
   });
 });
 drumKit.muteButtons.forEach((btn) => {
-  btn.addEventListener("click", function(e){
-drumKit.mute(e)
-  }
+  btn.addEventListener("click", function (e) {
+    drumKit.mute(e);
+  });
 });
