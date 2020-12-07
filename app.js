@@ -63,10 +63,10 @@ class DrumKit {
         this.kickAudio.src = selectionValue;
         break;
       case "snare-select":
-        this.kickAudio.src = selectionValue;
+        this.snareAudio.src = selectionValue;
         break;
       case "hihat-select":
-        this.kickAudio.src = selectionValue;
+        this.hihatAudio.src = selectionValue;
         break;
     }
   }
