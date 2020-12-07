@@ -13,6 +13,7 @@ class DrumKit {
     this.isPlaying = null;
     this.select = document.querySelectorAll("select");
     this.muteButtons = document.querySelectorAll(".mute");
+    this.tempoSlider = document.querySelector(".tempo-slider");
   }
   activePad() {
     this.classList.toggle("active");
