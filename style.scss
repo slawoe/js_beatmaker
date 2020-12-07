@@ -100,6 +100,24 @@ select {
 .mute.active {
   background-color: red;
 }
+.tempo {
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50rem;
+}
+.tempo-slider {
+  padding: 0.25rem;
+  -webkit-appearance: none;
+  width: 100%;
+  position: relative;
+  background: rgb(129, 126, 126);
+  cursor: pointer;
+  border-radius: 1rem;
+  border: 1px solid rgb(75, 72, 72);
+}
 
 @keyframes playTrack {
   from {
